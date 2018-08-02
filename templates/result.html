@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MEME LMAO</title>
+        <style>
+        #topText{
+            position: absolute;
+            color: white;
+            text-shadow: 1px 1px black;
+            top: 5%;
+            left: 40%;
+            font-size:20pt;
+            font-weight: bold;
+        }
+        
+        .container{
+            position: relative;
+        }
+        
+        #meme-div{
+            position: relative;
+            display: flex;
+            height: 600px;
+            width: 700px;
+        }
+        
+        #meme{
+            flex: 1 1 auto;
+        }
+        #bottomText{
+            position: absolute;
+            color: white;
+            text-shadow: 1px 1px black;
+            bottom: 5%;
+            left: 30%;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Look at {{username}}'s MEME</h1>
+        <!--<div class = container>
+            <div id = 'tomText'>CJ</div>
+            <div id = 'jerryText'>The urge to eat</div>
+            <img id = 'meme' src = "https://i.redd.it/1rm0s5l6uyc11.png">
+        </div> -->
+        
+         <div id = "meme-div">
+            <img id = 'meme' src = {{img_url}}>
+            <h2 id = 'topText'>{{topText}}</h2>
+            <h2 id = 'bottomText'>{{bottomText}}</h2>
+        </div>
+    </body>
+</html>

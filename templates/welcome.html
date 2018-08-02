@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MEME GENERATOR</title>
+        
+    </head>
+    <body>
+        <h1>Welcome to CJ's Meme Generator! New Meme Templates every day!</h1>
+        <h2>Here are today's memes!</h2>
+        <img height = "400px" width = "600px" src = "https://i.redditmedia.com/bIuHZvMkMk8lrrKx5nH4LARJBQ9ykpyRcne5Z2XH22I.png?fit=crop&crop=faces%2Centropy&arh=2&w=960&s=c7a05af9291c295cec75a24a7b880488" title = "Halo nutshot">
+        <img height = "400px" width = "600px" src = "https://i.redd.it/c296f1xwtxc11.jpg" title = "Indian guy plays his trump card">
+        <img height = "400px" width = "600px" src = "https://i.redd.it/zeytdwlmlzhz.jpg" title = "Tom vs shotgun">
+        <img height = "400px" width = "600px" src = "https://i.imgflip.com/1fw0fz.jpg" title = "Philosoraptor">
+        <form method = POST action = "/memeresult">
+            Username:<br>
+            <input type:"text" name="username" value="">
+            <br>
+            Top text:<br>
+            <input type="text" name="user-first-ln" value="">
+            <br>
+            Bottom text:<br>
+            <input type="text" name="user-second-ln" value="">
+            <br>
+            Meme type:<br>
+            <select name="meme-type">
+                <option value="https://i.redditmedia.com/bIuHZvMkMk8lrrKx5nH4LARJBQ9ykpyRcne5Z2XH22I.png?fit=crop&crop=faces%2Centropy&arh=2&w=960&s=c7a05af9291c295cec75a24a7b880488">Halo Nutshot</option>
+                <option value="https://i.redd.it/c296f1xwtxc11.jpg">The Trump Card</option>
+                <option value="https://i.redd.it/zeytdwlmlzhz.jpg">Tom vs Shotgun</option>
+                <option value="https://i.imgflip.com/1fw0fz.jpg">Philosoraptor</option>
+            </select>
+            <input type="submit" value="Create the memes!">
+        </form>
+    </body>
+</html>
